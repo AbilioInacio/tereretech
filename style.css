@@ -1,0 +1,219 @@
+/* Reset básico e Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    max-width: 1200px; /* Limita a largura do conteúdo principal */
+    margin: 20px auto; /* Centraliza e adiciona margem */
+    padding: 0 15px;
+}
+
+.content-section {
+    padding: 40px 0;
+    border-top: 1px solid #eee; /* Separa as seções */
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Header e Navbar */
+header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda, menu à direita */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px; /* Espaço entre os itens do menu */
+}
+
+.nav-link {
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Seção do Carrossel */
+.carousel-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center; /* Alinha botões e slides verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    position: relative; /* Necessário para posicionar botões se precisar */
+    margin: 20px 0;
+    max-width: 800px; /* Largura máxima do carrossel visível */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-slides {
+    overflow: hidden; /* Esconde os slides que estão fora da área visível */
+    width: 100%; /* Ocupa a largura do container */
+}
+
+.carousel-track {
+    display: flex; /* Coloca os itens lado a lado */
+    transition: transform 0.5s ease-in-out; /* Animação de transição */
+}
+
+.carousel-item {
+    min-width: 100%; /* Cada item ocupa toda a largura da área visível */
+    padding: 20px; /* Espaçamento interno do item */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 250px; /* Limita altura da imagem */
+    width: auto; /* Mantem proporção */
+    margin: 0 auto 15px auto; /* Centraliza e adiciona margem inferior */
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10; /* Garante que fiquem sobre os slides */
+    border-radius: 5px;
+    margin: 0 10px; /* Espaço entre botões e área dos slides */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Botões de Ação */
+.action-buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-destaque {
+    font-weight: bold;
+    transform: scale(1.05); /* Leve aumento para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsividade simples (Exemplo) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list {
+        margin-top: 10px;
+        justify-content: center; /* Centraliza itens do menu */
+    }
+
+    .carousel-container {
+        max-width: 95%; /* Usa mais da largura em telas menores */
+    }
+
+    .carousel-button {
+        padding: 8px 10px;
+        font-size: 1.2rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espaço entre botões empilhados */
+    }
+}

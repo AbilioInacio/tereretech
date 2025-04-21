@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Loja Incrível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-list">
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel-section" id="produtos">
+            <h1>Nossos Produtos em Destaque</h1>
+
+            <div class="carousel-container">
+                <button class="carousel-button prev" id="prevButton"><</button>
+
+                <div class="carousel-slides">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Produto 1 -->
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200/CCCCCC/000000?text=Produto+1" alt="Produto 1">
+                            <h2>Produto Incrível 1</h2>
+                            <p>Descrição breve e chamativa do produto 1.</p>
+                        </div>
+                        <!-- Produto 2 -->
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200/A9A9A9/FFFFFF?text=Produto+2" alt="Produto 2">
+                            <h2>Produto Fantástico 2</h2>
+                            <p>Descrição breve e chamativa do produto 2.</p>
+                        </div>
+                        <!-- Produto 3 -->
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200/808080/FFFFFF?text=Produto+3" alt="Produto 3">
+                            <h2>Produto Maravilhoso 3</h2>
+                            <p>Descrição breve e chamativa do produto 3.</p>
+                        </div>
+                         <!-- Adicione mais produtos se desejar -->
+                         <div class="carousel-item">
+                            <img src="https://via.placeholder.com/300x200/D3D3D3/000000?text=Produto+4" alt="Produto 4">
+                            <h2>Produto Extra 4</h2>
+                            <p>Descrição breve e chamativa do produto 4.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-button next" id="nextButton">></button>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary">Saiba Mais</button>
+                <button class="btn btn-primary btn-destaque">Comprar</button>
+            </div>
+
+        </section>
+
+        <section id="sobre" class="content-section">
+            <h2>Sobre Nós</h2>
+            <p>Informações sobre a empresa ou loja...</p>
+        </section>
+
+        <section id="contato" class="content-section">
+            <h2>Contato</h2>
+            <p>Formas de entrar em contato...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Nossa Loja Incrível. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
